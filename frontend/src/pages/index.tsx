@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { FuelObject } from "../components/fuelObject";
 
 interface Dict {
