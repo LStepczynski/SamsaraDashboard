@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 const Samsara = require("./src/samsara");
 
@@ -13,6 +14,11 @@ const app = express();
 
 // Middleware to parse JSON
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.get("/asset-location", (req, res) => {
   samsara
