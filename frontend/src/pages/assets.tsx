@@ -109,7 +109,9 @@ export const Assets = () => {
                 }}
                 key={innerElement}
               >
-                <h1>{innerElement}</h1>
+                <h1>
+                  {innerElement}: {elements[innerElement].length}
+                </h1>
                 <div
                   style={{
                     display: "flex",
